@@ -1,0 +1,234 @@
+body {
+	margin: 0;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	
+	color:#6c7279;
+	background-color: white;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+p {
+	margin: 0 0 10px;
+}
+
+/* ========== Header ========== */
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	height: 100px;
+}
+
+	/* ========== Container ========== */
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+		/* ========== Header__inner ========== */
+.header__inner {
+	display: flex;
+	justify-content: space-between; /* Делает так, что бы все подчасти (header__logo и nav) распределились по краям друг от друга */
+	padding: 35px 0;
+
+	border-bottom: 1px solid #515369;
+
+	align-items: center;
+}
+
+			/* ========== Header__logo ========== */
+
+			/* ========== Nav ========== */
+.nav {
+	display: flex;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+.nav__link {
+	margin-left: 50px;
+	color: white;
+	text-decoration: none;
+	opacity: .75;
+	transition: opacity .1s linear;
+}
+.nah__link:first-child {
+	margin-left: 0px;
+}
+
+.nav__link:hover {
+	opacity: 1;
+}
+
+/* ========== Intro ========== */
+
+.intro {
+	height: 750px;
+
+	background: url("img/intro-bg.jpg") center no-repeat;
+	background-size: cover;
+
+	padding-top: 100px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+	/* ========== Container ========== */
+
+		/* ========== Intro__inner ========== */
+
+.intro__inner {
+	max-width: 970px;
+	width: 100%;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+
+			/* ========== Intro__title ========== */
+
+.intro__title {
+	margin: 0;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 65px;
+	line-height: 1.1;
+	color: white;
+	font-weight: 700;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	margin: 0 0 30px;
+}
+			/* ========== Intro__subtitle ========== */
+
+.intro__subtitle {
+	font-size: 22px;
+	color: white;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 65px;
+}
+
+			/* ========== Button ========== */
+
+.intro__button {
+
+	text-transform: uppercase;
+
+	padding: 14px 40px; /* 14px сверху и снизу а 40px для права и лева*/
+	border-radius: 3px;
+
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-family: inherit;
+
+	cursor: pointer;
+	transition: .1s background-color linear;
+}
+
+.btn--red {
+	background-color: red;
+}
+
+.btn--red:hover {
+	background-color: #dd3434;
+}
+
+/* ========== Container ========== */
+	
+	/* ========== Features ========== */
+
+.features {
+	display: flex;
+	flex-wrap: wrap; /*  разрешает переносить элементы которые не помещаются на новую строку*/
+	margin: 80px 0;
+}
+
+		/* ========== Features__icon ========== */
+
+.features__icon {
+	margin: 0 0 25px;
+}
+
+			/* ========== Features__item ========== */
+
+.features__item {
+	width: 33.33333%;
+
+	padding: 40px 40px;
+
+	text-align: center;
+}
+
+.features__text {
+	color: black;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.features__title {
+	margin-bottom: 20px;
+
+	color: black;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* ========== Works ========== */
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+	/* ========== Works__item ========== */
+.works__item {
+	width: 25%;
+	height: 350px;
+	position: relative
+}
+
+.works__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+		/* ========== Works__content ========== */}
+.works__content {
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(232, 69, 69, .9);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
